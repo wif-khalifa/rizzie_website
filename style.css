@@ -1,25 +1,27 @@
-*   /* * without any uniqueID is the universal selector */
+*   /* '*' without any uniqueID is the universal selector */
 {
     text-align:center;
 }
 
 body, h1 /* separate selector with comma to use grouping selector */
 {
-    background-color:lightskyblue;
-    color:red;
+    background-image:url("ocean.jpeg");
+    color:rgb(250, 249, 249);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+        Verdana, sans-serif;
 }
 
 
 div
 {
-    background-color: black;
+    background-color: gold;
 }
 
 p
 {
-    color:beige;
+    color:aqua;
     margin-left:20px;
-    background-color:black;
+    /* background-color:#000000; /* hex color format #rrggbb (00-FF), can also be #rgb */
     font-size:xx-large;
 }
 
@@ -27,13 +29,14 @@ p
 {
     color:blueviolet;
     margin-left:20px;
-    background-color:black;
+    background-color: white; /* rgb color format, several others available */
     font-size:xx-large;
 }
 
 .CSS_Class /* use .uniqueID format for declaring a class */
 {
     color:darkgreen;
+    border:20px hsl(0, 100%, 50%); /* hsl format (hue, saturation, lightness) */
 }
 
 p.align_class /* classes can be setup to only affect specific html elements as well */
@@ -41,7 +44,3 @@ p.align_class /* classes can be setup to only affect specific html elements as w
     text-align:left;
 }
 
-p.large /* HTML elements can also refer to more than one class */
-{
-    font-size: 300%;
-}
