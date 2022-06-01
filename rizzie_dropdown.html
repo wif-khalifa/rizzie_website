@@ -8,10 +8,18 @@
     <script src="https://kit.fontawesome.com/96d23d6517.js" crossorigin="anonymous"></script>
 <style>
     .header{
-        color: pink;
+        color: black;
         text-align: center;
         font-family: "Lucida Console", "Courier New", monospace;
-        font-size: 50px;
+        font-size: 48px;
+        float: center;
+        position: relative;
+    }
+
+    .para{
+        text-align: center;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 30px;
     }
 
     a:link{
@@ -19,12 +27,15 @@
     }
 
     .dropdown{
-        position: relative;
-        display: inline-block;
+        font-size: 48px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
     }
 
     /* Drop-down menu appearance */
     .dropdown-content{
+        font-size: 20px;
         display: none;
         position: absolute;
         background-color: white;
@@ -45,6 +56,7 @@
     }
 
     .dropdown-content a:hover{
+        font-size: 20px;
         background-color: black;
         color: white;
         border: 2px solid pink;
@@ -59,22 +71,40 @@
         display: inline-block;
     }
 
+    .socials{
+        font-size: 48px;
+        color: black;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
 </style>
 </head>
 <body>
-    <a href="#" target="blank"><h1 class="header">BLAH</h1></a>
-    <a href="https://www.instagram.com/?hl=en"
-        target="blank"><i class="fa-brands fa-instagram" style="font-size: 48px; color: black;
-        float: right;"></i></a>
-    <div class="dropdown">
-        <i class="fas fa-bars" style="font-size:48px;"></i>
-            <div class="dropdown-content">
-                <a href="#">HOME</a>
-                <a href="#">SERVICES</a>
-                <a href="#">STORIES</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">CONTACT</a>
-            </div>
+    <div>
+        <a href="#" target="blank"><h1 class="header">BLAH</h1></a>
     </div>
+        <div>
+            <a href="https://www.instagram.com/?hl=en"
+                target="blank"><i class="fa-brands fa-instagram socials"></i></a>
+        </div>
+            <div class="dropdown">
+                <i class="fas fa-bars dropdown"></i>
+                    <div class="dropdown-content">
+                        <a href="#">HOME</a>
+                        <a href="#">SERVICES</a>
+                        <a href="#">STORIES</a>
+                        <a href="#">PORTFOLIO</a>
+                        <a href="#">CONTACT</a>
+                    </div>
+            </div>
+    
+    
+    <div>
+        <a href="#" target="blank"><img src="cover.jpg" style="padding: 100px 0px;" alt="cover"></a>
+        <p class="para">SUMMER COLLECTION</p>
+    </div>
+
 </body>
 </html>
