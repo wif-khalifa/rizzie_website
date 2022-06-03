@@ -16,6 +16,13 @@
     border: 10px solid white;
 }
 
+/*
+.image_main{
+    padding: 50px 0px;
+    width: max-content;
+}
+*/
+
 .para{
     text-align: center;
     font-family: "Lucida Console", "Courier New", monospace;
@@ -79,4 +86,10 @@ a:link{
     position: fixed;
     right: 10px;
     top: 10px;
+}
+
+.garment{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 12.5%;
 }
